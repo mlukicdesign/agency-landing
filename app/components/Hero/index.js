@@ -9,7 +9,7 @@ import Logo from "@/components/Logo";
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      <div className={styles.hero__top}>
+      <div className={styles.hero__top} data-hidden >
         <div data-menu-item>
           <Logo />
         </div>
@@ -18,14 +18,15 @@ const Hero = () => {
       </div>
 
       <h1 className={styles.hero__title}>
-        <span data-title-first>Ultra</span>
+        <span data-title-first data-hidden>Ultra</span>
         <span data-hero-line className={styles.hero__line}></span>
-        <span data-title-last>agency</span>
+        <span data-title-last data-hidden>agency</span>
       </h1>
 
       <div className={styles.hero__image}>
         <div data-image-overlay className={styles.hero__imageOverlay}></div>
         <Image
+          data-hidden
           data-image
           src="/images/blob.jpg"
           width={1728}
